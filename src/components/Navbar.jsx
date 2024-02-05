@@ -15,7 +15,7 @@ const Navbar = () => {
           <a className="nav-link active" aria-current="page" href="#">What we do</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Careier</a>
+          <a className="nav-link text-success" href="#">Careier</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Contact</a>
@@ -29,7 +29,8 @@ const Navbar = () => {
       </ul>
     </div>
   </div>
-</nav>  )
+</nav>  
+)
 }
 
 export default Navbar

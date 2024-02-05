@@ -1,0 +1,24 @@
+.card{
+    position: relative;
+}
+.light{
+    border-radius: 3px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+.green{
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    left: 122px;
+    
+}
+.yellow{   
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    left: 158px;
+
+   
+}

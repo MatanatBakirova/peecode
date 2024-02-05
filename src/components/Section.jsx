@@ -15,11 +15,11 @@ const Section = () => {
         </nav>
         <div className="section-two row">
             <div className="col-12 col-md-6">
-              <Card/>
+              <Card meqaleBasligiProps = "The truth about ReactJS" meqaleMetniProps="Sigh, it’s like we can’t catch a break. So much has happened over the past happened happened over the past happened....." meqaleShekliProps="https://res.cloudinary.com/dtuiajnrc/image/upload/v1706886110/Rectangle_228_a7evsn.png"/>
      </div>
 
      <div className="col-12 col-md-6">
-     <Card/>
+     <Card meqaleBasligiProps = "How to solve an unsolvable conflict" meqaleMetniProps="Sigh, it’s like we can’t catch a break. So much has happened over the past happened happened over the past happened....." meqaleShekliProps="https://res.cloudinary.com/dtuiajnrc/image/upload/v1706886108/Rectangle_228_1_f6rso7.png"/>
 
      </div>
     </div>
@@ -28,12 +28,12 @@ const Section = () => {
 {
   blogs.map((birBlog)=>(
     <div className="col-12 col-md-6 col-lg-4">
-    <Card meqaleBasligiProps={birBlog.meqaleBasligi}/>
+    <Card meqaleBasligiProps={birBlog.meqaleBasligi} meqaleMetniProps={birBlog.meqaleMetni} meqaleShekliProps={birBlog.meqaleShekli}/>
   </div>
 
   ))
-
 }
+
     </div>
     </div>
   )
