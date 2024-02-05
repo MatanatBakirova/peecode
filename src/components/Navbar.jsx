@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/images/logo.svg'
 import { FaBars } from "react-icons/fa";
+import "./Navbar.css"
 const Navbar = () => {
   return (
 <nav className="navbar navbar-expand-lg">
@@ -15,14 +16,14 @@ const Navbar = () => {
           <a className="nav-link active" aria-current="page" href="#">What we do</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-success" href="#">Careier</a>
+          <a className="color nav-link" href="#">Career</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Contact</a>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="#">Blog</a>
+          <a className="nav-link fw-bold" href="#">Blog</a>
         </li>
 
 

@@ -1,9 +1,23 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react' //2-ci addim
 import "./Section.css"
 import Card from './Card'
-import blogs from '../blog.json'
-
+// import blogs from '../blog.json'
+import axios from 'axios' //1-ci addim
 const Section = () => {
+
+  const [meqaleler,setMeqaleler]=useState(null) //[]-null eyni seydir
+
+  useEffect(()=>{
+    const unvan="./src/blog.json"
+
+
+   axios.get(unvan)
+   .then(melumat => setMeqaleler(melumat.data)) 
+   .catch(err => console.log('Severde xeta var'+err))
+
+  },[])
+
+
   return (
     <div className='mt-5'>
         <nav className='tab-links d-flex justify-content-center gap-5 pb-5'>
@@ -25,15 +39,12 @@ const Section = () => {
     </div>
 
     <div className="section-three row">
-{
-  blogs.map((birBlog)=>(
-    <div className="col-12 col-md-6 col-lg-4">
-    <Card meqaleBasligiProps={birBlog.meqaleBasligi} meqaleMetniProps={birBlog.meqaleMetni} meqaleShekliProps={birBlog.meqaleShekli}/>
-  </div>
-
-  ))
+{  meqaleler &&meqaleler.map(birMeqale=>(
+              <div className="col-12 col-md-6 col-lg-4">
+               <Card meqaleBasligiProps={birMeqale.meqaleBasligi} meqaleMetniProps={birMeqale.meqaleMetni} meqaleShekliProps={birMeqale.meqaleShekli}/>
+              </div>
+))
 }
-
     </div>
     </div>
   )
