@@ -1,1 +1,25 @@
-
+.overlay{
+    background: rgb(0, 0, 0,.4);
+    position: fixed;
+    height: 100vh;
+    z-index: 9999;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: 1.2s ease;
+    overflow-x: hidden;
+    
+}
+.aktiv{
+    width: 100%;
+}
+.nav-links {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
