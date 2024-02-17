@@ -23,3 +23,40 @@
     flex-direction: column;
     height: 100vh;
 }
+textarea{
+    resize: none;
+}
+
+.contact-form form{
+    width: 503px;
+    height: auto;
+    background-color: #1c2b32;
+    color: #fff;
+    padding: 56px 64px 64px 64px;
+    border-radius: 4px;
+}
+.contact-form p{
+    opacity: .7;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid;
+    color: #fff;
+    background-color: #1c2b32;
+}
+.form-control:focus{
+    background-color: transparent;
+    color: #fff;
+}
+::placeholder{
+    color: #6e6b6b !important;
+    font-weight: 500;
+}
+.sign-in-buttonu {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #4eba85;
+    color: #fff;
+    display: flex;
+    padding: 15px 50px;
+}
