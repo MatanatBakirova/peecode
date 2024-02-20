@@ -22,7 +22,6 @@ const Contact = () => {
         () => {
 
          setNotify(true)
-
           toast('🦄 Emeliyyat ugurla tamamlandi ', {
             position: "top-right",
             autoClose: 5000,
